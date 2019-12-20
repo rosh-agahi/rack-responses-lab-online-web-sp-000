@@ -1,5 +1,5 @@
 class Application
-  def call(env)
+  def initialize
     resp = Rack::Response.new 
     resp.write "Current time: #{Time.now}"
     
